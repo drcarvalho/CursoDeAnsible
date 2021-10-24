@@ -23,3 +23,14 @@
       - headers
       - ssl
     when: (ansible_facts['os_family'] == "Debian")
+    
+  - name: "Cria virtual host com as configuracoes do site - Debian"
+    template:
+      src: templates/site.conf
+      dest: /etc/apache2/sites-available/ {{ log_prefix }}.conf
+    when: (ansible_facts['os_family'] == "Debian")
+    notify:
+      - enableSite
+      - reloadApache2
+      - addInHostsFile
+      - SetPermissionWP-Debian
