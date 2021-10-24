@@ -1,0 +1,7 @@
+[centos]
+10.10.10.72 hostname=srv-centos-01-scv
+[ubuntu]
+10.10.10.74 hostname=srv-debian-01-scv
+
+# [centos:vars]
+# ansible_python_interpreter=/usr/bin/python2.7
