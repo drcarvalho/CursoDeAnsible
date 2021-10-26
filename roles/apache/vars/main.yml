@@ -1,7 +1,7 @@
 ---
 # vars file for apache
-site_folder: "/var/www/mario_local"
-site_url: "www.mario.local"
-site_domain: "mario.local"
-log_prefix: "mario-local"
+site_folder: "/var/www/daniel_local"
+site_url: "www.daniel.local"
+site_domain: "daniel.local"
+log_prefix: "daniel-local"
 php_version: "7.3"
