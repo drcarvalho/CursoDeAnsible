@@ -34,3 +34,4 @@
       - reloadApache2
       - addInHostsFile
       - SetPermissionWP-Debian
+      - InstallWordPress
