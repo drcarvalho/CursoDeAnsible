@@ -1,10 +1,10 @@
 ---
-- name: "instala o Apache em distro derivadas do RedHat"
-  yum: 
-    name:
+- name: "Instala o Apache em distro derivadas do RedHat"
+  yum:
+    name: 
       - httpd
       - openssl
-  state: latest
+    state: latest
   when: (ansible_facts['os_family'] == "RedHat")
   notify:
     - enableHttpd
@@ -15,7 +15,7 @@
     state: directory
   when: (ansible_facts['os_family'] == "RedHat")
 
-- name: "Cria virtual hosts com as configuracoes do site - RedHat"
+- name: "Cria virtual host com as configurações do site - RedHat" 
   template:
     src: templates/site.conf
     dest: /etc/httpd/vhost.d/{{ log_prefix }}.conf
@@ -24,5 +24,5 @@
     - addInHostsFile
     - addInHttpdFile
     - RestartHttpd
-    - InstallWordpress
-    - SetPermissionWP-CentOS    
+    - InstallWordPress
+    - SetPermissionWP-CentOS

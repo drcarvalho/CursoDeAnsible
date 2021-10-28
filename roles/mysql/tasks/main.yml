@@ -57,14 +57,14 @@
 - name: "removes all anonymous user accounts - Debian"
   mysql_user:
     login_unix_socket: "/var/run/mysqld/mysqld.sock"
-    name:  ''
+    name: ''
     host_all: yes
     state: absent
   when: (ansible_facts['os_family'] == "Debian") 
   
 - name: "removes all anonymous user accounts - RedHat"
   mysql_user:
-    name:  ''
+    name: ''
     host_all: yes
     state: absent
   when: (ansible_facts['os_family'] == "RedHat")

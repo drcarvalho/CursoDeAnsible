@@ -1,6 +1,6 @@
 ---
 # vars file for apache
-site_folder: "/var/www/daniel_local"
+site_folder: "/var/www/html"
 site_url: "www.daniel.local"
 site_domain: "daniel.local"
 log_prefix: "daniel-local"

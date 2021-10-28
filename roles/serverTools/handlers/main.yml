@@ -6,11 +6,10 @@
     line: " {{ item }}"
   with_items:
     - "127.0.0.1 {{ hostname }}"
-    - "{{ inventory_hostname }} {{ hostname }}"
+    - "{{inventory_hostname}} {{ hostname }}"
 
-# - name: restart server
-#     reboot:
-#         test_command: whoami
+# - name: Restart Server
+#   reboot:
 
 - name: enable yum-utils
   shell:

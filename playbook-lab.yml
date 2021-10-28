@@ -68,7 +68,7 @@
       state: touch
       owner: daniel
       group: daniel
-      mode: 0755        
+      mode: 0777
 
   - name: "exemplo de debug"  
     debug: 
